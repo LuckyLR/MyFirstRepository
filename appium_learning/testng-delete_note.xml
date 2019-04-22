@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <listeners>
+     <listener class-name="com.lr.listener.YoudaoNoteListener"/>
+     <listener class-name="com.lr.listener.MyAnnotationTransformer"/>
+  </listeners>
+  <test name="TestDeleteNote">
+  <!-- 
+    <packages>
+       <package name="com.lr.youdao_note.test">
+           <exclude name="com.lr.youdao_note.test.BaseTest"></exclude>
+       </package>
+    </packages>
+     -->
+    <classes>
+      <class name="com.lr.youdao_note.test.DeleteNoteTest"/>
+      <!--  <class name="com.lr.youdao_note.test.NewNoteTest"></class>-->
+    </classes>
+  </test> <!-- TestDeleteNote -->
+</suite> <!-- Suite -->
